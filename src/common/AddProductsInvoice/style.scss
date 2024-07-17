@@ -1,0 +1,97 @@
+.addProdParent {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    @media screen and (max-width: 420px) {
+        width: 360px;
+        @media screen and (max-width: 370px) {
+            width: 340px;
+        }
+    }
+
+    .addProdchild {
+      padding: 20px 15px 25px;
+      border-radius: 5px;
+      position: relative;
+  
+        h6 {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            max-width: 85%;
+        }
+
+        .krest {
+            width: 22px;
+            height: 22px;
+            margin: 0 !important; 
+            top: 15px;
+            right: 15px;
+
+            .line {
+                position: absolute;
+                width: 100%;
+                background-color: red;
+                left: 0;
+                bottom: 0;
+                padding: 0;
+            }
+        }
+        
+        .addDataBlock {
+            width: 100%;
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+
+            .inputBlock {
+                width: 48%;
+                
+                h5 {
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 15px;
+                    color: #222;
+                    margin-bottom: 5px;
+                    padding-left: 2px;
+                }
+
+                input {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    height: 40px;
+                    width: 100%;
+                    border-radius: 8px;
+                    border: 1px solid rgb(217, 223, 232);
+                    background-color: #fff;
+                    font-size: 14px;
+                    font-weight: 400;
+                
+                    &:focus {
+                    border: none;
+                    outline: none;
+                    }
+                }
+            }
+
+        }
+        .btnAddProds {
+            color: #fff;
+            padding: 11px 0;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid rgb(217, 223, 232);
+            font-size: 18px;
+            margin-top: 10px;
+            background-color: rgba(97, 100, 239, 0.7);
+            min-width: 100%;
+        }
+    }
+    
+  }

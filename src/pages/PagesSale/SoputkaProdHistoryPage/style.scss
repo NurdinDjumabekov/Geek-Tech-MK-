@@ -1,0 +1,86 @@
+.saleHistory {
+    flex: 1;
+    padding-bottom: 50px;
+      
+      .historyParent {
+        min-width: 100%;
+        width: 100%;
+        padding-bottom: 20px;
+        border-top-width: 1px;
+        border-color: rgba(47, 71, 190, 0.587);
+        min-height: 80%;
+        flex: 1;
+      }
+      
+      .everyInner {
+        background-color: rgba(162, 178, 238, 0.102);
+        min-width: 100%;
+        padding: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid  rgba(47, 71, 190, 0.287);
+        position: relative;
+
+        .krest {
+            top: 12px;
+        }
+      }
+      
+      .mainData {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding-right: 10px;
+      }
+      
+      .mainDataInner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+      }
+      
+      .date {
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 5px;
+        line-height: 16px;
+        color: rgba(12, 169, 70, 0.9);
+      }
+      
+      .sum {
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        line-height: 16px;
+        color: rgba(47, 71, 190, 0.672);
+      }
+      
+      .title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+      
+      .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 8px;
+      }
+      
+      .sendBtn {
+        background-color: #fff;
+        color: #fff;
+        width: 48%;
+        border-radius: 8px;
+        font-weight: 600;
+        background-color: rgba(12, 169, 70, 0.9);
+        align-self: center;
+        font-size: 16px;
+        padding: 10px 5px;
+      }
+      
+}

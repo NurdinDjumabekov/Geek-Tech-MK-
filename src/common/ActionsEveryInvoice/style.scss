@@ -1,0 +1,50 @@
+.parentSelects {
+    padding-top: 10px;
+    padding-bottom: 3px;
+  }
+  
+  .choiceCateg {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    width: 96%;
+    align-self: center;
+    padding-bottom: 3px;
+    margin-top: 3px;
+    padding-left: 2px;
+    margin: 0 auto;
+
+  }
+  
+  .blockSelect {
+    width: 96%;
+    align-self: center;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto 10px;
+  }
+  
+  .inputAndroid {
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #000;
+    box-shadow: 0 2px 4px #000;
+    width: 100%;
+    align-self: center;
+    background-color: #fff;
+  }
+  
+  .arrowSelect {
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-color: #222;
+    height: 12px;
+    width: 12px;
+    border-radius: 3px;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 14px;
+    right: 25px;
+  }
+  

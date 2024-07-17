@@ -1,0 +1,48 @@
+.navMenuChildren {
+    min-width: 100%;
+    padding: 5px 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 98;
+}
+
+.navMenu {
+    min-width: 100%;
+    padding: 5px 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+
+    button {
+        width: 25px;
+        min-height: 25px;
+        height: 25px;
+        min-width: 25px;
+        background-color: transparent;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        color: #222;
+        display: -webkit-box; /* Для поддержки старых версий Safari */
+        -webkit-box-orient: vertical; /* Определяет направление текста */
+        -webkit-line-clamp: 1; /* Максимум 4 строки */
+        overflow: hidden; /* Скрыть излишек текста */
+        text-overflow: ellipsis;
+    }
+}

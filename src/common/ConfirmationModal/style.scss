@@ -1,0 +1,46 @@
+.parentConf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerActions {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 320px;
+
+    h6 {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+
+        .btnsGood, .btnsNoo {
+            color: #fff;
+            font-size: 18px;
+            width: 90px;
+            padding: 8px 0px;
+            background: green;
+            border-radius: 8px;
+          }
+          
+          .btnsNoo {
+            background: red;
+          }
+    }
+  }
+
+  
+ 
+ 

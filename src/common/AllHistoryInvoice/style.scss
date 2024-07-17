@@ -1,0 +1,86 @@
+.everyProdHistory {
+    padding: 10px;
+    background-color: rgba(212, 223, 238, 0.47);
+    margin-bottom: 5px;
+    border-width: 1px;
+    border-color: rgba(47, 71, 190, 0.107);
+    min-width: 100%;
+
+    .everyProdInner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+    
+    .blockTitle {
+      width: 67%;
+    }
+    
+    .blockTitleInner {
+      display: flex;
+      flex-direction: row;
+      gap: 7px;
+      align-items: center;
+    }
+    
+    .titleNum {
+      font-size: 19px;
+      font-weight: 700;
+      color: rgba(47, 71, 190, 0.672);
+      border-color: rgba(47, 71, 190, 0.672);
+      border-width: 1px;
+      background-color: #d4dfee;
+      padding: 4px;
+      padding-left: 7px;
+      padding-right: 0;
+      border-radius: 5px;
+    }
+    
+    .sum {
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(12, 169, 70, 0.9);
+      line-height: 17px;
+    }
+    
+    .date {
+      font-size: 15px;
+      font-weight: 500;
+      color: rgba(47, 71, 190, 0.687);
+      line-height: 22px;
+    }
+    
+    .comment {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+    
+    .status {
+      padding-right: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      @media screen and (max-width: 390px) {
+        padding-right: 10px;
+      }
+    }
+    
+    .good {
+      color: rgba(12, 169, 70, 0.9);
+      font-size: 12px;
+      font-weight: 500;
+      text-align: left;
+      background: transparent !important;
+    }
+    
+    .bad {
+      color: red;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: left;
+    }
+  }
+  
+  

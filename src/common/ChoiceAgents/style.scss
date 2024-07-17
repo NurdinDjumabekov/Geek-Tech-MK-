@@ -1,0 +1,21 @@
+.selectBlockInnerAgent  {
+    min-width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(217, 223, 232);
+    background-color: #fff;
+    border-radius: 5px;
+
+    .selectText {
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(47, 71, 190, 0.672);
+    }
+
+    .activeSelectText {
+        color: #fff;
+    }
+}
+
+.activeSelectAgent {
+    background: rgba(47, 71, 190, 0.672);
+}

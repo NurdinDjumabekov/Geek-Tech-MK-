@@ -1,0 +1,46 @@
+.addProds {
+    flex: 1;
+    position: relative;
+
+    .childBlock {
+        flex: 1;
+        margin-bottom: 40px;
+      }
+      
+      .arrowBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        padding-top: 12px;
+        padding-bottom: 15px;
+        background-color: rgba(97, 112, 188, 0.972);
+        margin-bottom: 0;
+        width: 100%;
+      }
+      
+      .textBtn {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+      }
+      
+      .btnScaner {
+        width: 60px;
+        height: 60px;
+        background-color: #67fe53;
+        position: absolute;
+        bottom: 20px;
+        align-self: center;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+      }
+      
+      .imgQR {
+        width: 80%;
+        height: 80%;
+      }
+}

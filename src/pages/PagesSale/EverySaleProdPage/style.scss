@@ -1,0 +1,83 @@
+.parentEveryProdSale {
+    position: relative;
+    padding: 25px 10px;
+    height: 85vh;
+
+    .krest {
+      right: 10px;
+      top: 20px;
+    }
+
+    .leftovers {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(47, 71, 190, 0.591);
+      margin: 5px 0px;
+    }
+    
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      max-width: 85%;
+    }
+    
+    .addDataBlock {
+      width: 100%;
+      align-self: center;
+
+      .inputTitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        color: #222;
+        margin-bottom: 5px;
+        padding-left: 2px;
+      }
+      
+      .inputBlock {
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      .input {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 45px;
+        width: 100%;
+        border-radius: 8px;
+        border-color: rgb(217, 223, 232);
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+
+        &::placeholder {
+          font-size: 14px;
+        }
+        
+        &:focus {
+            border: 1px solid rgba(47, 71, 190, 0.287) !important;
+            outline: 1px solid rgba(47, 71, 190, 0.287);
+        }
+      }
+    }
+    
+    .btnAddProds {
+      color: #fff;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      border-width: 1px;
+      border-color: rgb(217, 223, 232);
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: rgba(97, 100, 239, 0.7);
+      position: absolute;
+      bottom: 20px;
+      min-width: 95%;
+    }
+  }
+  
+
+  

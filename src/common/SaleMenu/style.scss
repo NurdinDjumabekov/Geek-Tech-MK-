@@ -1,0 +1,92 @@
+.blockMenuActions {
+    display: flex;
+    gap: 40px;
+    background-color: #e0e4f5;
+    height: 70px;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+
+    > button {
+        border-radius: 10px;
+        padding: 3px;
+        width: 60px;
+        height: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+
+        p {
+            color: #222;
+            text-align: center;
+            width: 90px;
+            font-size: 12px;
+        }
+
+        img {
+            width: 33px;
+            height: 33px;
+            min-height: 33px;
+        }
+    }
+
+    .blockBtn_inner_QR {
+        background-color: rgba(97, 112, 188, 0.972);
+        border-radius: 5px;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+////// modals
+.modalInnerQR {
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    background: #fff;
+    @media screen and (max-width: 420px) {
+        width: 340px;
+    }
+
+    h4 {
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    input {
+        border: 1px solid rgb(217, 223, 232);
+        border-radius: 5px;
+        padding: 8px 10px 8px 15px;
+        font-size: 16px;
+        background-color: #fff;
+        min-width: 100%;
+        height: 40px;
+    }
+
+    button {
+        background-color: rgba(12, 169, 70, 0.9);
+        color: #fff;
+        min-width: 100%;
+        padding: 12px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        border: 1px solid rgb(217, 223, 232); 
+        margin-top: 20px;
+    }
+}

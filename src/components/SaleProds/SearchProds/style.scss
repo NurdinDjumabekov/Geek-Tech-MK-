@@ -1,0 +1,47 @@
+.blockSearch {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    input {
+      height: 35px;
+      border-radius: 5px;
+      padding: 0px 10px;
+      margin: 10px 0px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #000;
+      width: 100%;
+      border: none;
+  
+      &::placeholder {
+          color: #222;
+          font-size: 16px;
+          font-weight: 400;
+      }
+  
+      &:focus {
+          border: none;
+          outline: none;
+      }
+    }
+  
+    > button {
+      background: transparent;
+  
+      img {
+          width: 30px;
+          height: 30px;
+      }
+    }
+  }
+  
+  
+  

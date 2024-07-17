@@ -1,0 +1,36 @@
+.everyProd {
+    background-color: rgba(162, 178, 238, 0.102);
+    padding: 10px;
+    border-top: 1px solid rgba(162, 178, 238, 0.439);
+    border-bottom: 1px solid rgba(162, 178, 238, 0.439);
+    display: flex;
+    flex-direction: row;
+
+    p {
+      color: #222;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    > div {
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    &__inner {
+      display: flex;
+
+      span {
+        display: block;
+        color: rgba(47, 71, 190, 0.887);
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+  }
+  
+  

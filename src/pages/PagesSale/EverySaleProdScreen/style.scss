@@ -1,0 +1,99 @@
+.parentSale {
+    flex: 1;
+    position: relative;
+    padding: 25px 10px;
+    .leftovers {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(47, 71, 190, 0.591);
+      margin: 5px 0;
+    }
+    
+    .title {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      max-width: 85%;
+    }
+    
+    .addDataBlock {
+      width: 100%;
+      align-self: center;
+    }
+    
+    .inputTitle {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 15px;
+      color: #222;
+      margin-bottom: 5px;
+      padding-left: 2px;
+    }
+    
+    .inputBlock {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .input {
+      padding: 0 10px;
+      height: 45px;
+      width: 100%;
+      border-radius: 5px;
+      border-color: rgb(217, 223, 232);
+      background-color: #fff;
+    }
+    
+    .inputPrice {
+      padding: 0 10px;
+      height: 42px;
+      width: 100%;
+      border-radius: 5px;
+      border-color: rgb(217, 223, 232);
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .price {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15px;
+      color: #222;
+    }
+    
+    .priceNone {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15px;
+      color: red;
+      text-decoration: line-through;
+    }
+    
+    .priceDiscount {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15px;
+      color: green;
+      margin-left: 10px;
+    }
+    
+    .btnAdd {
+      color: #fff;
+      padding: 11px 0;
+      border-radius: 8px;
+      font-weight: 600;
+      border-width: 1px;
+      border-color: rgb(217, 223, 232);
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: rgba(97, 100, 239, 0.7);
+      position: absolute;
+      bottom: 20px;
+      align-self: center;
+      min-width: 100%;
+    }
+  }
+  
+  
