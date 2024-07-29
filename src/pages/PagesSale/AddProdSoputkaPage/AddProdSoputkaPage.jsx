@@ -23,6 +23,8 @@ const AddProdSoputkaPage = ({}) => {
   const { guid } = location.state?.forAddTovar; ////guid созданной накладной
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     return () => {
       dispatch(clearListProductTT());
       dispatch(changeSearchProd(""));

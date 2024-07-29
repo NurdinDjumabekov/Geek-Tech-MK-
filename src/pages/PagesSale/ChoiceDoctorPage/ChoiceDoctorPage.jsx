@@ -23,6 +23,7 @@ const ChoiceDoctorPage = () => {
 
   useEffect(() => {
     getData();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   const choiceDoctor = (obj) => {

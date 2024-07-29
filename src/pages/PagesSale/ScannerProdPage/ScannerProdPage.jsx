@@ -52,6 +52,8 @@ const ScannerProdPage = () => {
       qrScanerStop();
     }
 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     return () => qrScanerStop();
   }, [start]);
 

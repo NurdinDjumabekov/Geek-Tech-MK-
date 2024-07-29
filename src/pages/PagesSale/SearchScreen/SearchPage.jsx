@@ -30,6 +30,8 @@ const SearchPage = () => {
       refInput?.current?.focus();
     }, 300);
 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     return () => {
       dispatch(clearListProductTT());
       dispatch(changeSearchProd(""));

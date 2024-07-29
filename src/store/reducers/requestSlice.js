@@ -89,7 +89,6 @@ export const getHistoryBalance = createAsyncThunk(
 
 //// checkQrCodeDoctor
 export const checkQrCodeDoctor = createAsyncThunk(
-  /// чекаю QR код
   "checkQrCodeDoctor",
   async function (props, { dispatch, rejectWithValue }) {
     const { data, navigate, seller_guid } = props;
@@ -102,11 +101,15 @@ export const checkQrCodeDoctor = createAsyncThunk(
           await navigate("/");
         } else {
           await navigate("/");
-          await navigate("sale/main");
+          await navigate("/sale/main");
           const dataObj = { qrcode: data, seller_guid, comment: "" };
           await dispatch(createInvoiceSoputkaTT({ navigate, dataObj }));
           const fioDoctor = response?.data?.doctor?.[0]?.fio;
-          alert(`Врач: ${fioDoctor}`);
+          if (!window.alertShown) {
+            // Проверяем глобальный флаг
+            window.alertShown = true; // Устанавливаем глобальный флаг
+            alert(`Врач: ${fioDoctor}`);
+          }
         }
       } else {
         throw Error(`Error: ${response.status}`);
@@ -138,7 +141,6 @@ export const addProdQrCode = createAsyncThunk(
         } else {
           const obj = product?.[0];
           navigate("/sale/every_prod", { state: { obj, guid } });
-          alert(`Товар: ${product?.[0]?.product_name}`);
         }
       } else {
         throw Error(`Error: ${response.status}`);

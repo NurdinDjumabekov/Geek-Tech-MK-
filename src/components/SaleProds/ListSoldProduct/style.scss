@@ -1,74 +1,78 @@
 .listSoldsParent {
+  position: relative;
+  padding-bottom: 70px;
 
   .containerList {
-      background-color: rgba(162, 178, 238, 0.102);
-      min-width: 100%;
-      padding: 10px 8px;
-      border-bottom: 1px solid rgba(47, 71, 190, 0.287);
-      position: relative;
-    }
+    background-color: rgba(162, 178, 238, 0.102);
+    min-width: 100%;
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(47, 71, 190, 0.287);
+    position: relative;
+  }
 
-    .flatList {
-      width: 100%;
-      padding-top: 2px;
-    }
-    
-    .parentBlock {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 5px 0;
+  .flatList {
+    width: 100%;
+    padding: 2px 0px 40px;
+  }
 
-      .krest {
-        top: 12px;
-      }
+  .parentBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+
+    .krest {
+      top: 12px;
     }
-    
-    .titleDate {
-      font-size: 14px;
-      font-weight: 500;
-      border-radius: 5px;
-      line-height: 16px;
-      color: rgba(47, 71, 190, 0.672);
-    }
-    
-    .title {
-      font-size: 15px;
-      font-weight: 500;
-      border-radius: 5px;
-      line-height: 17px;
-      color: #222;
-      margin-top: 5px;
-    }
-    
-    .price {
-      font-size: 15px;
-      font-weight: 400;
-    }
-    
-    .totalPrice {
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(12, 169, 70, 0.9);
-    }
-    
-    .mainData {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 5px;
-    }
-    
-    .sendBtn {
-      display: block;
-      background-color: #fff;
-      color: #fff;
-      min-width: 96%;
-      padding: 13px;
-      border-radius: 5px;
-      font-weight: 600;
-      background-color: rgba(12, 169, 70, 0.9);
-      margin: 20px auto 0px !important;
-    }
+  }
+
+  .titleDate {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    line-height: 16px;
+    color: rgba(47, 71, 190, 0.672);
+  }
+
+  .title {
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    line-height: 17px;
+    color: #222;
+    margin-top: 5px;
+  }
+
+  .price {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .totalPrice {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(12, 169, 70, 0.9);
+  }
+
+  .mainData {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .sendBtn {
+    display: block;
+    background-color: #fff;
+    color: #fff;
+    min-width: 96%;
+    padding: 13px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgba(12, 169, 70, 0.9);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-  

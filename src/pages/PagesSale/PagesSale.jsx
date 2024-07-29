@@ -25,10 +25,3 @@ const PagesSale = () => {
 };
 
 export default PagesSale;
-
-//// <NavMenu navText={"Проданные товары"} />
-////  navigate("/sale/sols_prods", { state: { guidInvoice: infoKassa?.guid } });
-//   const navigate = useNavigate();
-//  const location = useLocation();
-
-///  const { guid } = location.state; ////guid созданной накладной

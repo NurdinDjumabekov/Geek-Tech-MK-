@@ -16,8 +16,8 @@ import NavMenu from "../../../common/NavMenu/NavMenu";
 const ScannerDoctorPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const [start, setStart] = useState(true);
+  const [qrCodeScanned, setQrCodeScanned] = useState(false); // Новый флаг
 
   const { data } = useSelector((state) => state.saveDataSlice);
   const seller_guid = data?.seller_guid;
@@ -25,8 +25,7 @@ const ScannerDoctorPage = () => {
   const errorText = "Произошла ошибка, попробуйте перезагрузить сайт";
 
   useEffect(() => {
-    setStart(true);
-    const config = { fps: 10, qrbox: { width: 200, height: 200 } };
+    const config = { fps: 10, qrbox: { width: 250, height: 250 } };
     const html5QrCode = new Html5Qrcode("qrCodeContainer");
 
     const qrScanerStop = () => {
@@ -39,9 +38,15 @@ const ScannerDoctorPage = () => {
     };
 
     const qrScanerSucces = (decodedText) => {
-      setStart(false);
-      dispatch(checkQrCodeDoctor({ data: decodedText, navigate, seller_guid }));
-      navigator.vibrate(200); // Вибрация при успешном сканировании
+      if (!qrCodeScanned) {
+        // Проверяем флаг
+        setQrCodeScanned(true); // Устанавливаем флаг
+        setStart(false);
+        dispatch(
+          checkQrCodeDoctor({ data: decodedText, navigate, seller_guid })
+        );
+        navigator.vibrate(200); // Вибрация при успешном сканировании
+      }
     };
 
     if (start) {
@@ -53,7 +58,7 @@ const ScannerDoctorPage = () => {
     }
 
     return () => qrScanerStop();
-  }, [start]);
+  }, [start, qrCodeScanned]);
 
   return (
     <>

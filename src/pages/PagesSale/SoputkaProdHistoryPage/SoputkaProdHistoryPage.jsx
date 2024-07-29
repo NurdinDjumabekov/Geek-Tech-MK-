@@ -31,6 +31,8 @@ const SoputkaProdHistoryPage = () => {
 
   useEffect(() => {
     getData();
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [listProdSoputka?.[0]?.doctor]);
 
   const confirmBtn = () => {

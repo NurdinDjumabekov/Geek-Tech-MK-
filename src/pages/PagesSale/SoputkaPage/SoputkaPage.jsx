@@ -28,6 +28,7 @@ const SoputkaPage = () => {
 
   useEffect(() => {
     getData();
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     return () => {
       dispatch(clearListCategory());
